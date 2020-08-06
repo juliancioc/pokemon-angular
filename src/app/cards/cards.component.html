@@ -1,0 +1,48 @@
+<div class="container">
+    <div id="cards" *ngFor="let card of cards">
+        <a routerLink="/card">
+            <figure class="card card--normal">
+                <div class="card__image-container">
+                    <img src={{card.imageUrl}} alt="Imagem Pokemon">
+                </div>
+
+                <figcaption class="card__caption">
+                    <h1 class="card__name">{{card.name}}</h1>
+
+                    <h3 class="card__type">
+                        {{card.rarity}}
+                    </h3>
+
+                    <table class="card__stats">
+                        <tbody>
+                            <tr>
+                                <th>ID</th>
+                                <td>{{card.id}}</td>
+                            </tr>
+                            <tr>
+                                <th>HP</th>
+                                <td>{{card.hp}}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Tipo</th>
+                                <td>{{card.types}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="card__abilities">
+                        <h4 class="card__ability">
+                            <span class="card__label">Super Tipo</span>
+                            {{card.supertype}}
+                        </h4>
+                        <h4 class="card__ability">
+                            <span class="card__label">Sub tipo</span>
+                            {{card.subtype}}
+                        </h4>
+                    </div>
+                </figcaption>
+            </figure>
+        </a>
+    </div>
+</div>

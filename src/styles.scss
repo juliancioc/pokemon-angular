@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./variables";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background: $color-background;
+}
+
