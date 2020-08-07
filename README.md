@@ -1,27 +1,27 @@
-# PokemonAngular
+<img src="https://github.com/juliancioc/pokemon-angular/blob/master/ezgif.com-video-to-gif.gif" width="600" height="338"/>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+Live demo: https://dazzling-borg-bbbc46.netlify.app/cards
 
-## Development server
+# Elaboração
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O design da aplicação foi pensado de uma forma que acompanhe o estilo do produto, no caso cartas do Pokemon. As cores tiveram origem deles, seguindo um tom amarelo.
+Na tela inicial é possível pesquisar cartas pelo nome, decidi não deixar um botão para filtrar e adicionei o autocomplete, assim o layout fica mais clean.
 
-## Code scaffolding
+O usuário pode clicar em uma das cartas para obter mais detalhes sobre o personagem.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Este projeto utiliza:
 
-## Build
+- JavaScript
+- TypeScript
+- Angular
+- Rxjs
+- SASS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Mobile First 😉️
 
-## Running unit tests
+- Consumo da API https://pokemontcg.io/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Como iniciar:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `yarn install` para instalar todos os pacotes.
+- `ng serve --open` para iniciar o projeto local.
