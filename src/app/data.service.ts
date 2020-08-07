@@ -10,7 +10,7 @@ import { Card } from './card';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'https://api.pokemontcg.io/v1/cards';
+  private apiUrl = 'https://api.pokemontcg.io/v1/';
 
   constructor(
     private http: HttpClient,
@@ -18,11 +18,11 @@ export class DataService {
   ) { }
 
   getCards() {
-    return this.http.get(this.apiUrl);
+    return this.http.get(`${this.apiUrl}/cards`);
   }
 
-  getCard(id: number): Observable<Card> {
-    const url = `${this.apiUrl}/${id}`;
+  getCard(id: string): Observable<Card> {
+    const url = `${this.apiUrl}/cards/${id}`;
     return this.http.get<Card>(url).pipe(
       catchError(this.handleError<Card>(`getCard id=${id}`))
     );

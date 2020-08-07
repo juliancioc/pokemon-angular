@@ -1,1 +1,70 @@
-<p>card works!</p>
+<div class="container" *ngIf="card">
+    <figure class="card card--normal">
+        <div class="card__image-container">
+            <img src={{card.imageUrlHiRes}} alt="Imagem Pokemon">
+        </div>
+
+        <figcaption class="card__caption">
+            <h1 class="card__name">{{card.name}}</h1>
+
+            <h3 class="card__type">
+                {{card.rarity}}
+            </h3>
+
+            <table class="card__stats" *ngFor="let resistance of resistances">
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <td>{{card.id}}</td>
+                    </tr>
+                    <tr>
+                        <th>HP</th>
+                        <td>{{card.hp}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Tipo</th>
+                        <td>{{card.types}}</td>
+                    </tr>
+
+                    <tr>
+                        <th>Resistências</th>
+                        <td>{{resistance.type}}</td>
+                    </tr>
+
+                    <tr *ngFor="let weakness = weaknesses">
+                        <th>Fraquezas</th>
+                        <td>{{weakness.type}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div>
+                <hr>
+                <span class="card__label">Lista de ataques</span>
+
+                <div class="attacks" *ngFor="let attack of attacks">
+                    <table class="card__stats">
+                        <tbody>
+                            <tr>
+                                <th>Nome</th>
+                                <td>{{attack.name}}</td>
+                            </tr>
+                            <tr>
+                                <th>Custo de mana</th>
+                                <td>{{attack.convertedEnergyCost}}</td>
+                            </tr>
+
+                            <tr>
+                                <th>Dano</th>
+                                <td>{{attack.damage}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Descrição: {{attack.text}}</p>
+                </div>
+            </div>
+        </figcaption>
+    </figure>
+</div>
