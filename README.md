@@ -1,6 +1,6 @@
 <img src="https://github.com/juliancioc/pokemon-angular/blob/master/ezgif.com-video-to-gif.gif" width="600" height="338"/>
 
-Live demo: https://dazzling-borg-bbbc46.netlify.app/cards
+<a href="https://dazzling-borg-bbbc46.netlify.app/cards" target="_blank">Live demo</a>
 
 # Elaboração
 
@@ -19,7 +19,7 @@ O usuário pode clicar em uma das cartas para obter mais detalhes sobre o person
 
 - Mobile First 😉️
 
-- Consumo da API https://pokemontcg.io/
+-  <a href="https://pokemontcg.io/" target="_blank">Consumo da API Pokémon TCG Developers</a>
 
 # Como iniciar:
 
